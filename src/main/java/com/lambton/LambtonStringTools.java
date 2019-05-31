@@ -30,7 +30,7 @@ public class LambtonStringTools {
         }
         if(a==2)
         {
-            initials=s.substring(0,1)+"."+" "+s.substring(s.indexOf(" ") + 1 , s.indexOf(" ") + 2)+".";
+            initials=s.substring(0,1)+"."+" "+s.substring(s.indexOf(" ") + 1 , s.indexOf(" ") + 2)+"."+s.substring(s.lastIndexOf(" "));
 
         }
         else{
