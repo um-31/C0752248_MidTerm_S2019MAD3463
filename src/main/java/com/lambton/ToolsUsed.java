@@ -7,6 +7,8 @@ public class ToolsUsed {
         obj.binaryToDecimal("1010");
         obj.mostFrequent("Udhay");
         obj.mostFrequent("Mahajan");
+        obj.initials("Udhay Mahajan");
+        obj.initials("Udhay Madhu Mahajan");
 
     }
 }

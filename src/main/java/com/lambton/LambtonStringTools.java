@@ -28,6 +28,15 @@ public class LambtonStringTools {
                 a=a+1;
             }
         }
+        if(a==2)
+        {
+            initials=s.substring(0,1)+".";
+
+        }
+        else{
+            System.out.println("Null");
+        }
+        System.out.println(initials);
     }
 
     public void mostFrequent(String s) {
@@ -44,10 +53,10 @@ public class LambtonStringTools {
             }
         }
         if (count >= 1) {
-            System.out.print("Most Frequent Character is: " + mostUsed);
+            System.out.println("Most Frequent Character is: " + mostUsed);
         }
         else{
-            System.out.print("No character repeated");
+            System.out.println("No character repeated");
         }
     }
 
