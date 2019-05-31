@@ -62,9 +62,20 @@ public class LambtonStringTools {
 
     public void replaceSubString(String s1, String s2, String s3){
         int a=0;
-        if(s1.contains("the")){
-            a++;
+        char[] full=s1.toLowerCase().toCharArray();
+        char[] search=s2.toLowerCase().toCharArray();
+        char[] replace=s3.toLowerCase().toCharArray();
+        for(int i=0;i<search.length;i++)
+        {
+            if (full[i]==search[i])
+            {
+                //full[i]=full[i-1];
+            }
         }
-        System.out.println(a);
+        for(int i=0;i<search.length;i++)
+        {
+            System.out.println(full[i]);
+        }
+
     }
 }

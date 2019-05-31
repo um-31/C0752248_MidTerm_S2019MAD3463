@@ -9,7 +9,7 @@ public class ToolsUsed {
         obj.mostFrequent("Mahajan");
         obj.initials("Udhay Mahajan");
         obj.initials("Udhay Madhu Mahajan");
-        obj.replaceSubString("the dog jumped","the","that");
+        obj.replaceSubString("The Dog Jumped","the","that");
 
     }
 }
