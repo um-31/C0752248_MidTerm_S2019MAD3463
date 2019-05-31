@@ -9,13 +9,16 @@ public class LambtonStringTools {
         {
             output= output + String.valueOf(rev[i]);
         }
-        System.out.print(output);
+        System.out.println(output);
 
     }
     public void binaryToDecimal(String s){
 
+            int decimal=Integer.parseInt(s,2);
+            System.out.println(decimal);
+
     }
-    public void initials(String s){
+    public void initials(String s) {
 
     }
     public void mostFrequent(String s){
