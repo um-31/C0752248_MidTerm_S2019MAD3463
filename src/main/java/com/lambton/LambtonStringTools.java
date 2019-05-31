@@ -61,6 +61,10 @@ public class LambtonStringTools {
     }
 
     public void replaceSubString(String s1, String s2, String s3){
-
+        int a=0;
+        if(s1.contains("the")){
+            a++;
+        }
+        System.out.println(a);
     }
 }
