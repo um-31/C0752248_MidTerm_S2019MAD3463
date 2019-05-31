@@ -23,28 +23,18 @@ public class LambtonStringTools {
     }
 
     public void mostFrequent(String s) {
-        char[] array = s.toCharArray();
-        int count = 1;
-        int max = 0;
-        char maxChar = 0;
-
-            for (int i = 1; i < array.length; i++) {
-
-
-                if (array[i] == array[i - 1]) {
-                    count++;
-                } else {
-                    if (count > max) {
-                        max = count;
-                        maxChar = array[i - 1];
-                    }
-                    count = 1;
+        int count = 0;
+        char mostUsed=' ';
+        char[] input= s.toCharArray();
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1; j < s.length(); j++) {
+                if (input[i] == input[j]) {
+                    mostUsed=(input[j]);
+                    break;
                 }
             }
-
-            System.out.println("Most Frequent: " + max + ", for the character " + maxChar);
-
-
+        }
+        System.out.print("Most Frequent Character is: "+mostUsed);
         }
 
     public void replaceSubString(String s1, String s2, String s3){
