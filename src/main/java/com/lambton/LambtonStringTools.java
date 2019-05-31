@@ -19,7 +19,15 @@ public class LambtonStringTools {
 
     }
     public void initials(String s) {
-
+        int a=0;
+        String initials="";
+        char[] c1=s.toCharArray();
+        for(int i=0;i<c1.length;i++){
+            if(c1[i]==' ')
+            {
+                a=a+1;
+            }
+        }
     }
 
     public void mostFrequent(String s) {
