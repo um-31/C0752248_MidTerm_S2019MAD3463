@@ -5,7 +5,8 @@ public class ToolsUsed {
         LambtonStringTools obj =new LambtonStringTools();
         obj.reverse("Udhay");
         obj.binaryToDecimal("1010");
-        obj.mostFrequent("mahahjahn");
+        obj.mostFrequent("Udhay");
+        obj.mostFrequent("Mahajan");
 
     }
 }

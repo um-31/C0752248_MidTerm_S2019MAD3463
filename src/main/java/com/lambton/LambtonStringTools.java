@@ -24,18 +24,24 @@ public class LambtonStringTools {
 
     public void mostFrequent(String s) {
         int count = 0;
-        char mostUsed=' ';
-        char[] input= s.toCharArray();
+        char mostUsed = ' ';
+        char[] input = s.toCharArray();
         for (int i = 0; i < s.length(); i++) {
             for (int j = i + 1; j < s.length(); j++) {
                 if (input[i] == input[j]) {
-                    mostUsed=(input[j]);
+                    mostUsed = (input[j]);
+                    count++;
                     break;
                 }
             }
         }
-        System.out.print("Most Frequent Character is: "+mostUsed);
+        if (count >= 1) {
+            System.out.print("Most Frequent Character is: " + mostUsed);
         }
+        else{
+            System.out.print("No character repeated");
+        }
+    }
 
     public void replaceSubString(String s1, String s2, String s3){
 
