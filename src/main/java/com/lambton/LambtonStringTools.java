@@ -86,11 +86,10 @@ public class LambtonStringTools {
         s1=s1.toLowerCase();
         if(s1.contains(s2)){
             s1=s1.replaceAll(s2,s3);
+            System.out.println(s1);
         }
         else{
             System.out.println("String does not contains give other string");
         }
-        System.out.println(s1);
-
     }
 }
