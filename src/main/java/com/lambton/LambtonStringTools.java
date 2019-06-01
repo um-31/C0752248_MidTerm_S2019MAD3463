@@ -69,12 +69,12 @@ public class LambtonStringTools {
         {
             if (full[i]==search[i])
             {
-                //full[i]=full[i-1];
+                full[i]=replace[i];
             }
         }
-        for(int i=0;i<search.length;i++)
+        for(int i=0;i<full.length;i++)
         {
-            System.out.println(full[i]);
+            System.out.print(full[i]);
         }
 
     }
