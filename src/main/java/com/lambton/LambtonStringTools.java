@@ -62,20 +62,35 @@ public class LambtonStringTools {
 
     public void replaceSubString(String s1, String s2, String s3){
         int a=0;
-        char[] full=s1.toLowerCase().toCharArray();
+        s1=s1.toLowerCase();
+        /*char[] full=s1.toLowerCase().toCharArray();
         char[] search=s2.toLowerCase().toCharArray();
         char[] replace=s3.toLowerCase().toCharArray();
         for(int i=0;i<search.length;i++)
         {
             if (full[i]==search[i])
             {
-                full[i]=replace[i];
+                if(search.length==replace.length)
+                {
+                    full[i]=replace[i];
+                }
+                else{
+
+                }
             }
         }
         for(int i=0;i<full.length;i++)
         {
             System.out.print(full[i]);
+        }*/
+        String abc="";
+        if(s1.contains(s2)){
+            s1=s1.replaceAll(s2,s3);
         }
+        else{
+            System.out.println("String does not contains give other string");
+        }
+        System.out.println(s1);
 
     }
 }
